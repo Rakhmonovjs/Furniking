@@ -4,15 +4,15 @@
     align-items: center;
     text-align: center;
 
-    .navbar_wel{
+    &_wel{
         display: flex;
         margin: auto;
-        width: 80%;
+        width: 73%;
         height: 50px;
         flex-shrink: 0;
         background: #7AC751;
     
-        &>h2{
+        &_title{
             display: flex;
             white-space: nowrap;
             width: 100px;
@@ -25,7 +25,7 @@
             font-weight: 400;
             line-height: normal;
         }
-        .language{
+        &_language{
             // position: relative;
             display: flex;
             margin-inline-start: 866px;
@@ -38,7 +38,7 @@
             line-height: normal;
             background-color: #7AC751;
             
-            select{
+            &_selects{
                 color: #FFF;
                 border-color: #7Ac751;
                 background-color: #7AC751;
@@ -46,7 +46,7 @@
         
         }
 
-        .buttons{
+        &_buttons{
             display: flex;
             margin-right: 132px;
             border-color: #7AC751;
@@ -59,7 +59,7 @@
             line-height: normal;
             cursor: pointer;
 
-            button{
+            &_button{
                 width: 70px;
                 // height: 10px;
                 border: #7AC751;
@@ -84,7 +84,7 @@
             flex-shrink: 0;
             background: #7AC751;
     
-            h2{
+            &_title{
                 white-space: nowrap; /* So'zni bir qatorga jiylashtirish */
                 
                 margin-top: 15px;
@@ -96,7 +96,7 @@
                 font-weight: 400;
                 line-height: normal;
             }
-            .language{
+            &_language{
                 // position: relative;
                 display: flex;
                 margin-inline-start: 466px;
@@ -109,7 +109,7 @@
                 line-height: normal;
                 background-color: #7AC751;
                 
-                select{
+                &_selects{
                     color: #FFF;
                     border-color: #7Ac751;
                     background-color: #7AC751;
@@ -117,7 +117,7 @@
             
             }
     
-            .buttons{
+            &_buttons{
                 display: flex;
                 margin-right: 132px;
                 border-color: #7AC751;
@@ -130,7 +130,7 @@
                 line-height: normal;
                 cursor: pointer;
     
-                button{
+                &_button{
                     width: 70px;
                     // height: 10px;
                     border: #7AC751;
@@ -147,7 +147,7 @@
         }
     }
 
-    .navbar_battom{
+    &_battom{
         display: flex;
         margin-top:40px;
 
@@ -156,17 +156,18 @@
         flex-shrink: 0;
         // background: #7AC751;
 
-        img{
+        &_logo{
             width: 31.787px;
             height: 38.965px;
             flex-shrink: 0;   
             display: flex;
-            margin: -10px 10px 10px 300px;
+            margin: -11px 10px 10px 10px;
+            margin-inline-start: 360px;
             justify-content: start;
             align-items: start; 
         }
 
-        h1{
+        &_title{
             color: var(--primary, #555);
             font-family: Rubik;
             font-size: 24px;
@@ -177,13 +178,83 @@
 
         }
 
-        p{
+        &_search{
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 1px 12px 20px 136px;
 
         }
+
+        &_icons{
+            display: flex;
+            margin-inline-start: 205px;
+
+            &_img{
+                display: flex;
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                margin: 4px 15px 0px 15px;
+            }
+        }
+
+    }
+    @media (max-width: 1200px) {
+        &_battom{
+            display: flex;
+            margin-top:40px;
+    
+            width: 80%;
+            height: 50px;
+            flex-shrink: 0;
+            // background: #7AC751;
+    
+            &_logo{
+                width: 31.787px;
+                height: 38.965px;
+                flex-shrink: 0;   
+                display: flex;
+                margin: -11px 10px 10px 10px;
+                margin-inline-start: 75px;
+                justify-content: start;
+                align-items: start; 
+            }
+    
+            &_title{
+                color: var(--primary, #555);
+                font-family: Rubik;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin: 2px 20px -1px -3px;
+    
+            }
+    
+            &_search{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1px 12px 20px 106px;
+    
+            }
+    
+            &_icons{
+                display: flex;
+                margin-inline-start: 20px;
+    
+                &_img{
+                    display: flex;
+                    width: 24px;
+                    height: 24px;
+                    flex-shrink: 0;
+                    margin: 4px 15px 0px 15px;
+                }
+            }
+    
+        }
+
     }
 
     

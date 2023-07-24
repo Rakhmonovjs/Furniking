@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "name": "All"
+    },
+    {
+      "id": 2,
+      "name": "New Arrivals"
+    },
+    {
+      "id": 3,
+      "name": "Hot Sale"
+    },
+    {
+      "id": 4,
+      "name": "Furniture"
+    },
+    {
+      "id": 5,
+      "name": "Amrature"
+    },
+    {
+      "id": 6,
+      "name": "Tabble"
+    },
+    {
+      "id": 7,
+      "name": "Chair"
+    },
+    {
+      "id": 8,
+      "name": "Sofa"
+    },
+    {
+      "id": 9,
+      "name": "Mirrors"
+    },
+    {
+        "id": 10,
+        "name": "Stools"
+    },
+    {
+        "id": 11,
+        "name": "Benches"
+    }
+  ]
