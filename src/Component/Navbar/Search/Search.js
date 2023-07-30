@@ -34,6 +34,7 @@ const Search = () => {
       <div className='search_list'>
         <input
           type="text"
+          placeholder='   Search hero...'
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
