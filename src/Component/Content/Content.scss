@@ -1,7 +1,313 @@
 .content{
-    display: flex;
+    // display: flex;
     width: 73%;
     margin: auto;
-    justify-content: start;
+    // justify-content: start;
+
+    &_cards{
+        display: flex;
+        margin-inline-start: 40px;
+        margin-block-start: 20px;
+        gap: 210px;
+
+        &_shipping{
+            display: flex;
+            align-content: flex-start;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        
+
+            &_img{
+                margin: -8px 0px 1px 40px;
+                margin-right: 10px;
+                width: 58px;
+                height: 58px;
+                flex-shrink: 0;
+
+            }
+
+            &_p{
+                // flex: 1;
+                margin: 0px -76px 0px -10px;
+                width: 125px;
+                color: var(--primary, #555);
+                font-family: Rubik;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 130% */
+                display: grid;
+
+                &_span{
+                    // margin-left: 10px;
+                    margin: 0px 13px 0px 0px;
+                    color: var(--black-2nd, rgba(81, 81, 81, 0.71));
+                    font-family: Rubik;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; /* 185.714% */
+                }
+            }
+
+           
+        }
+        //  Gift 
+
+        &_gift{
+            display: flex;
+            align-content: flex-start;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        
+
+            &_img{
+                margin: -8px 0px 1px 40px;
+                margin-right: 10px;
+                width: 58px;
+                height: 57.998px;
+                flex-shrink: 0;
+                flex-shrink: 0;
+
+            }
+
+            &_p{
+                // flex: 1;
+                margin: 0px -76px 0px -10px;
+                width: 129px;
+                color: var(--primary, #555);
+                font-family: Rubik;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 130% */
+                display: grid;
+
+                &_span{
+                    // margin-left: 10px;
+                    width: 125px;
+                    margin: 0px 0px 0px 0px;
+                    color: var(--black-2nd, rgba(81, 81, 81, 0.71));
+                    font-family: Rubik;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; /* 185.714% */
+                }
+            }
+
+           
+        }
+
+        // quick 
+
+        &_quick{
+            display: flex;
+            align-content: flex-start;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        
+
+            &_img{
+                margin: -8px 0px 1px 40px;
+                margin-right: 10px;
+                width: 58px;
+                height: 57.998px;
+                flex-shrink: 0;
+                flex-shrink: 0;
+
+            }
+
+            &_p{
+                // flex: 1;
+                margin: 0px -76px 0px -10px;
+                width: 129px;
+                color: var(--primary, #555);
+                font-family: Rubik;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 130% */
+                display: grid;
+
+                &_span{
+                    // margin-left: 10px;
+                    width: 125px;
+                    margin: 0px 0px 0px 0px;
+                    color: var(--black-2nd, rgba(81, 81, 81, 0.71));
+                    font-family: Rubik;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; /* 185.714% */
+                }
+            }
+
+        }
+        // Support
+
+        &_support{
+            display: flex;
+            align-content: flex-start;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        
+
+            &_img{
+                margin: -8px 0px 1px 40px;
+                margin-right: 10px;
+                width: 58px;
+                height: 57.998px;
+                flex-shrink: 0;
+                flex-shrink: 0;
+
+            }
+
+            &_p{
+                // flex: 1;
+                margin: 0px -76px 0px -10px;
+                width: 129px;
+                color: var(--primary, #555);
+                font-family: Rubik;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 130% */
+                display: grid;
+
+                &_span{
+                    // margin-left: 10px;
+                    width: 125px;
+                    margin: 0px 0px 0px 0px;
+                    color: var(--black-2nd, rgba(81, 81, 81, 0.71));
+                    font-family: Rubik;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; /* 185.714% */
+                }
+            }
+
+           
+        }
+    }
+
+    &_discont{
+        margin-top: 50px;
+        width: 1200px;
+        margin-inline-start: 70px;
+        background: #FFF;
+        // background: lightgray -2.392px -133.985px / 128.291% 116.775% no-repeat;
+        display: grid;
+        // gap: 10px;
+        grid-template-areas: 
+        'modern modern bookcase bookcase'
+        'modern modern bookcase bookcase'
+        'modern modern sofa sofa'
+        'modern modern sofa sofa'
+        ;
+
+        &_modern{
+            grid-area: modern;
+            height: 515px;
+            flex-shrink: 0;
+            
+            // background-image: url("path/to/your/image.jpg");
+            // background-color: blueviolet;
+
+            &_img{
+                width: 790px;
+                height: 590px;
+                flex-shrink: 0;
+            }
+            &_h2{
+                margin:-525px 430px 0px 0px;
+                color: var(--primary, #555);
+                font-family: Mulish;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px; /* 118.182% */
+            }
+            &_span{
+                margin: 5px 250px 0px -300px;
+                color: var(--main-color, #7AC751);
+                font-family: Mulish;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px; /* 130% */ 
+                display: block;
+            }
+            &_p{
+                margin: 10px 370px 10px -270px;
+                color: #757575;
+                font-family: Mulish;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; /* 162.5% */
+            }
+
+
+        }
+
+        &_bookcase{
+            grid-area: bookcase;
+            // width: 485px;
+            height: 247px;
+            flex-shrink: 0;
+            // background-color: aqua;
+
+            &_img{
+                width: 485px;
+                height: 247px;
+                margin: 5px 0px 0px 0px;
+                flex-shrink: 0;
+            }
+            
+            &_h2{
+                margin: 5px 0px 0px 0px;
+                color: var(--primary, #555);
+                font-family: Mulish;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px; /* 118.182% */
+            }
+            &_span{
+                margin: 5px 0px 0px 0px;
+                color: var(--main-color, #7AC751);
+                font-family: Mulish;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px; /* 130% */ 
+                display: block;
+            }
+            &_button{
+                margin: 5px 0px 0px 0px;
+                color: #757575;
+                font-family: Mulish;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; /* 162.5% */
+            }
+        }
+
+        &_sofa{
+            grid-area: sofa;
+            // width: 485px;
+            height: 247px;
+            flex-shrink: 0;
+            // background-color: azure;
+        }
+
+    }
 
 }
