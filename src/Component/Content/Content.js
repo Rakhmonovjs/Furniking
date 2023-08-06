@@ -62,9 +62,9 @@ const Content = () => {
           
         </div>
       </div>  
-          {/* Modern  */}
+          
       <div className='content_discont'>
-        
+        {/* Modern  */}
         <div className='content_discont_modern'>
           <img src={modern} className='content_discont_modern_img' />
           <h2 className='content_discont_modern_h2'>
@@ -80,6 +80,7 @@ const Content = () => {
         </div>
             {/* Bookcase  */}
         <div className='content_discont_bookcase'>
+        <img src={bookcase} className='content_discont_bookcase_img' />
             
             <h2 className='content_discont_bookcase_h2'>
               Geometric Bookcase
@@ -87,24 +88,24 @@ const Content = () => {
             <span className='content_discont_bookcase_span'>
               Up to 20% discount
             </span>
-            <button className='content_discont_bookcase_button'>
-              Read mode
-            </button>
-            <img src={bookcase} className='content_discont_bookcase_img' />
+            <p className='content_discont_bookcase_p'>
+              Read more
+            </p>
+            
         </div>
 
         {/* Sofa */}
         <div className='content_discont_sofa'>
           <img src={sofa} className='content_discont_sofa_img' />
-          {/* <h2 className='content_discont_sofa_h2'>
+          <h2 className='content_discont_sofa_h2'>
             Minimal Sofa collections 
           </h2>
           <span className='content_discont_sofa_span'>
             Sale upto 40% discount
           </span>
-          <button className='content_discont_sofa_button'>
-            Read mode
-          </button> */}
+          <p className='content_discont_sofa_p'>
+            Read more
+          </p>
 
         </div>
       </div>

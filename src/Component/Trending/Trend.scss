@@ -1,0 +1,84 @@
+// Home.scss
+@import './scssData.json';
+
+.trend {
+  &_h1 {
+    color: var(--primary, #555);
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &_pages {
+    &_top {
+      &_box {
+        display: grid;
+        grid-template-columns: var(--imageWidth) var(--nameWidth) var(--titleWidth) var(--priceWidth) var(--discountWidth);
+        grid-template-rows: var(--imageHeight) var(--nameHeight) var(--titleHeight) var(--priceHeight) var(--discountHeight);
+
+        &_img {
+          width: var(--imageWidth);
+          height: var(--imageHeight);
+          flex-shrink: 0;
+        }
+
+        &_name {
+          width: var(--nameWidth);
+          height: var(--nameHeight);
+          flex-shrink: 0;
+          color: rgba(117, 117, 117, 0.71);
+          font-family: Mulish;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+          letter-spacing: 0.112px;
+          text-transform: uppercase;
+        }
+
+        &_title {
+          width: var(--titleWidth);
+          height: var(--titleHeight);
+          flex-shrink: 0;
+          color: #555;
+          font-family: Rubik;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          letter-spacing: 0.1px;
+        }
+
+        &_price {
+          width: var(--priceWidth);
+          height: var(--priceHeight);
+          flex-shrink: 0;
+          color: #555;
+          font-family: Rubik;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%;
+          letter-spacing: 0.1px;
+        }
+
+        &_discount {
+          width: var(--discountWidth);
+          height: var(--discountHeight);
+          flex-shrink: 0;
+          color: #CCC;
+          text-align: center;
+          font-family: Mulish;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+          letter-spacing: 0.09px;
+          text-decoration-line: strikethrough;
+        }
+      }
+    }
+  }
+}

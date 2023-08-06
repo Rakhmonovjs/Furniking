@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "."
+    },
+    {
+      "id": 2,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discont": "$230",
+      "img": ""
+    },
+    {
+      "id": 4,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": ""
+    },
+    {
+      "id": 5,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": ""
+    },
+    {
+      "id": 6,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": ""
+    },
+    {
+      "id": 7,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": ""
+    },
+    {
+      "id": 8,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": ""
+    }
+]
