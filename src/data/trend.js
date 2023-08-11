@@ -1,10 +1,7 @@
 export const products ={
   title: 'Top Products',
   subtitle: '',
-
-  pages:[
-    {
-      productsList:[
+      toplist:[
         {
           "id": 1,
           "name": "CHAIR",
@@ -70,6 +67,4 @@ export const products ={
           "img": "./images/elegantchair.png"
         }
       ],
-    },
-  ]
 }
