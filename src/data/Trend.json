@@ -1,0 +1,134 @@
+ 
+  [
+
+    {
+      "id": 1,
+      "categoryId": 1,
+      "name": "CHAIR",
+      "sale": "229.00",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/lcdchair.png"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/iconicchair.png"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "name": "CHAIR",
+      "sale": "229.00",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discont": "$230",
+      "img": "./images/diningchair.png"
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/busckbochair.png"
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/modernchair.png"
+    },
+    {
+      "id": 6,
+      "categoryId": 3,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/plastikchair.png"
+    },
+    {
+      "id": 7,
+      "categoryId": 4,
+      "name": "CHAIR",
+      "sale": "229.00",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/woodchair.png"
+    },
+    {
+      "id": 8,
+      "categoryId": 4,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/elegantchair.png"
+    },
+    {
+      "id": 8,
+      "categoryId": 5,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/elegantchair.png"
+    },
+    {
+      "id": 8,
+      "categoryId": 6,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/elegantchair.png"
+    },
+    {
+      "id": 8,
+      "categoryId": 6,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/elegantchair.png"
+    },
+    {
+      "id": 8,
+      "categoryId": 6,
+      "sale": "229.00",
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/elegantchair.png"
+    },
+    {
+      "id": 8,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/elegantchair.png"
+    },
+    {
+      "id": 8,
+      "name": "CHAIR",
+      "title": "Minimal iconic chair",
+      "price": "$135",
+      "discount": "$230",
+      "img": "./images/elegantchair.png"
+    }
+  ]
+        
+

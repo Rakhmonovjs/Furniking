@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import './Trend.scss'
 import cartIcon from '../../images/cart.svg';
 import { IoIosArrowDown, IoIosArrowRoundForward } from 'react-icons/io';
-import data from '../../data/products.json';
+import Trend from '../../data/Trend.json';
 import { useEffect, useState } from 'react';
 import { FiSearch, FiShoppingCart } from 'react-icons/fi';
 import { CiHeart } from 'react-icons/ci';
@@ -16,13 +16,13 @@ import "swiper/css/pagination";
 
 
 
-const Top = () => {
+const Trending = () => {
     // const { pages } = products
     const [activeSortCategory, setactiveSortCategory] = useState(0);
     const [activeSortPrice, setactiveSortPrice] = useState(50);
     const [activeSortSize, setactiveSortSize] = useState(0);
     const [sortProductCategory, setsortProductCategory] = useState(1);
-    const [products, setproducts] = useState(data);
+    const [products, setproducts] = useState(Trend);
     const [sortedCategory, setsortedCategory] = useState(false);
     const [activePagination, setactivePagination] = useState(0);
   
@@ -41,26 +41,26 @@ const Top = () => {
     useEffect(() => {
       let res = false
       if (activeSortSize !== 0) {
-        res = data.filter(({ size }) => { return size === activeSortSize });
+        res = Trend.filter(({ size }) => { return size === activeSortSize });
       }
       if (activeSortCategory !== 0) {
         if (res) res = res.filter(({ categoryId }) => { return categoryId === activeSortCategory })
-        else res = data.filter(({ categoryId }) => { return categoryId === activeSortCategory })
-        setsortedCategory(data.filter(({ categoryId }) => { return categoryId === activeSortCategory }))
+        else res = Trend.filter(({ categoryId }) => { return categoryId === activeSortCategory })
+        setsortedCategory(Trend.filter(({ categoryId }) => { return categoryId === activeSortCategory }))
       } else {
         setsortedCategory(false);
       }
-      if (res === false) res = data;
+      if (res === false) res = Trend;
       setproducts(res);
   
-      if (!res) res = data
+      if (!res) res = Trend
     }, [activeSortSize, activeSortCategory]);
   
     useEffect(() => {
       let res = false;
-      if (sortProductCategory === 3) res = data.filter((el) => { return el.sale ? el : null });
-      if (sortProductCategory === 2) res = data.filter((el) => { return el.sale ? el : null });
-      if (sortProductCategory === 1) res = data;
+      if (sortProductCategory === 3) res = Trend.filter((el) => { return el.sale ? el : null });
+      if (sortProductCategory === 2) res = Trend.filter((el) => { return el.sale ? el : null });
+      if (sortProductCategory === 1) res = Trend;
       setproducts(res);
   
     }, [sortProductCategory]);
@@ -71,6 +71,24 @@ const Top = () => {
     };
 
   return (
+    // <div className='top'>
+    //   <div className='top_pages'>
+    //     {
+    //       Trend.map(index =>{
+    //         return(
+    //           <div className='trend_pages_box' key={index.id}>
+    //             <img className='trend_pages_box_img' src={index.img}/>
+    //             <h6 className=''>{index.name}</h6>
+    //             <h2>{index.title}</h2>
+    //             <p>{index.price}</p>
+    //             <span>{index.discount}</span>
+    //           </div>
+    //         )
+    //       })
+    //     }
+    //   </div>
+
+    // </div>
     <div className="main-product-list">
     <div className="main-product-list-category">
       <div className="main-product-list-category-list">
@@ -91,7 +109,7 @@ const Top = () => {
     </div>
     <div className="main-product-list-items">
       {
-        products.slice(activePagination * 9, 9)?.map(({ id, name, img, price, sale, }) => {
+        Trend.slice(activePagination * 9, 9)?.map(({ id, name, img, price, sale, }) => {
           return <article key={id} className="main-product-list-item">
             <div className="main-product-list-item-img">
               <img src={img} alt="" />
@@ -141,39 +159,7 @@ const Top = () => {
     </div>
   </div>
     
-    
-    
-    // <Swiper 
-    //         modules={[Pagination, Navigation]} 
-    //         pagination={{ clickable: true}}
-    //         navigation={true}
-    //         className='productslider'
-    //         >
-    //     {[products].map((top, index) => {
-    //         return (
-    //             <SwiperSlide key={index} >
-    //                 <div className='swiperslide'>
-    //                     {top.toplist.map((product, index) => {
-    //                         const { img, name, title, price, discount } = product;
-    //                         return (
-    //                             <div className='swiperslide_top ' key={index}>
-    //                                 <div className=''>
-    //                                     <img src={img} alt='' className='swiperslide_top_img'/>
-                                        
-    //                                     <h2 className='swiperslide_top_name'>{name}</h2>
-    //                                     <h6 className='swiperslide_top_title'>{title}</h6>
-    //                                     <p className='swiperslide_top_price'>{price}</p>
-    //                                     <span className='swiperslide_top_discount'>{discount}</span>
-    //                                 </div>
-    //                             </div>    
-    //                         );
-    //                     })};
-    //                 </div>
-    //             </SwiperSlide>
-    //         )
-    //     })}
-    // </Swiper>
   )
 }
 
-export default Top
+export default Trending

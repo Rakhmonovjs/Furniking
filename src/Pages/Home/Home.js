@@ -3,7 +3,7 @@ import Navbar from '../../Component/Navbar/Navbar'
 import './Home.scss'
 import Header from '../../Component/Header/Header'
 import Content from '../../Component/Content/Content'
-import Top from '../../Component/Trending/Top'
+import Trending from '../../Component/Trending/Trending'
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
         <Navbar />
         <Header />
         <Content />
-        <Top />
+        <Trending />
     </div>
   )
 }
